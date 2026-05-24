@@ -14,7 +14,7 @@ const Hero = () => {
           <a href="#projects" className="btn">
             <FaEye style={{ marginRight: "8px" }} /> View My Work
           </a>
-          <a href="https://drive.google.com/file/d/1Wg0GcBtjKmsnETET7ImERwWXrGaMEFYc/view?usp=drive_link" className="btn" target="_blank" rel="noreferrer">
+          <a href="/assets/Aniruddha Sain_CV.pdf" className="btn" target="_blank" rel="noreferrer">
             <FaDownload style={{ marginRight: "8px" }} /> Download CV
           </a>
         </div>
