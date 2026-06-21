@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-image">
-          <img src="/assets/about-me.png" alt="About Me" />
+          <img src="/assets/about.png" alt="About Me" />
         </div>
         <div className="about-content">
           <h2>About Me</h2>
