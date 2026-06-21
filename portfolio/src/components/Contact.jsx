@@ -94,15 +94,15 @@ const Contact = () => {
         <div className="contact-right">
           <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
             <label>Name</label>
-            <input type="text" placeholder="Your name" name="user_name" required />
+            <input type="text" placeholder="Your Name" name="user_name" required />
             <label>Email</label>
-            <input type="email" placeholder="Your email" name="user_email" required />
+            <input type="email" placeholder="Your Email" name="user_email" required />
             <label>Subject</label>
-            <input type="text" placeholder="Your subject" name="user_subject" />
+            <input type="text" placeholder="Your Subject" name="user_subject" />
             <label>Message</label>
             <textarea
               rows="4"
-              placeholder="Your message"
+              placeholder="Your Message"
               name="user_message"
               required
             ></textarea>

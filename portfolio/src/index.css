@@ -120,7 +120,7 @@ nav a:hover {
   padding-left: 20px;
 }
 .hero {
-  height: 68vh;
+  height: 66vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,15 +143,6 @@ nav a:hover {
   font-weight: 400;
   margin-top: 10px;
   color: #aaa;
-}
-.hero-btns {
-  display: flex;
-  gap: 15px;
-  margin-top: 45px;
-}
-.hero-btns .btn {
-  padding: 10px 24px;
-  font-size: 14px;
 }
 .hero-image {
   display: flex;
