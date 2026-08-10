@@ -65,8 +65,8 @@ const Skills = () => {
               <p>Flask</p>
             </div>
             <div>
-              <img src="/assets/skill-logos/mysql.svg" alt="MySQL" />
-              <p>MySQL</p>
+              <img src="/assets/skill-logos/postgresql.svg" alt="PostgreSQL" />
+              <p>PostgreSQL</p>
             </div>
             <div>
               <img src="/assets/skill-logos/mongodb.svg" alt="MongoDB" />
@@ -110,15 +110,15 @@ const Skills = () => {
               <p>LangChain</p>
             </div>
             <div>
-              <img src="/assets/skill-logos/Streamlit.svg" alt="Streamlit" />
-              <p>Streamlit</p>
+              <img src="/assets/skill-logos/gemini.svg" alt="Gemini" />
+              <p>Gemini</p>
             </div>
           </div>
         </div>
         <div className="skill-box">
           <h3>
             <FaTools style={{ marginRight: "10px", color: "#ff0000" }} /> Tools
-            & Platforms
+            & Deployment
           </h3>
           <div className="skills-grid">
             <div>
@@ -130,15 +130,16 @@ const Skills = () => {
               <p>GitHub</p>
             </div>
             <div>
-              <img src="/assets/skill-logos/vscode.svg" alt="VS Code" />
-              <p>VS Code</p>
+              <img src="/assets/skill-logos/docker.svg" alt="Docker" />
+              <p>Docker</p>
             </div>
             <div>
-              <img
-                src="/assets/skill-logos/googlecolab-original.svg"
-                alt="Google Colab"
-              />
-              <p>Google Colab</p>
+              <img src="/assets/skill-logos/postman.svg" alt="Postman" />
+              <p>Postman</p>
+            </div>
+            <div>
+              <img src="/assets/skill-logos/vercel.svg" alt="Vercel" />
+              <p>Vercel</p>
             </div>
           </div>
         </div>

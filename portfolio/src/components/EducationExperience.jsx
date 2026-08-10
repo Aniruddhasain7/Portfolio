@@ -15,8 +15,9 @@ const EducationExperience = () => {
               <h4>B.Tech in Computer Science & Engineering</h4>
               <div className="course-duration">Aug 2023 – Jun 2027</div>
               <ul className="exp-list">
-                <li>Actively involved in academic and technical projects.</li>
-                <li>Focused on developing strong problem-solving skills.</li>
+                <li>
+                  Currently pursuing B.Tech in Computer Science & Engineering with a strong focus on Data Structures & Algorithms (DSA), Database Management Systems (DBMS), and Computer Networks (CN).
+                </li>
               </ul>
             </div>
           </div>
@@ -25,30 +26,38 @@ const EducationExperience = () => {
           <h2>
             <FaBriefcase style={{ marginRight: "12px" }} /> Experience
           </h2>
-          <div className="experience-card">
-            <h3 className="company">Edunet Foundation</h3>
-            <div className="role">
-              <h4>AI & Cloud Intern</h4>
-              <p className="duration">Jul 2025 – Aug 2025</p>
-              <ul className="exp-list">
-                <li>
-                  Worked on AI-driven solutions and cloud-based applications
-                  using IBM Cloud.
-                </li>
-                <li>
-                  Gained hands-on experience in cloud services, model
-                  deployment, and project workflows.
-                </li>
-              </ul>
+          <div className="experience-timeline">
+            <div className="experience-card">
+              <div className="timeline-dot"></div>
+              <h3 className="company">Edunet Foundation</h3>
+              <div className="role-content">
+                <h4>AI & Cloud Intern</h4>
+                <p className="duration">Jul 2025 – Aug 2025</p>
+                <ul className="exp-list">
+                  <li>
+                    Designed and developed AI-driven cloud applications on IBM
+                    Cloud, implementing serverless architectures and integrating
+                    advanced cognitive APIs for secure, real-time data
+                    processing.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="role">
-              <h4>AI & ML Intern</h4>
-              <p className="duration">Jan 2026 – Feb 2026</p>
-              <ul className="exp-list">
-                <li>Built and trained machine learning models using Python.</li>
-                <li>Performed data preprocessing and feature engineering.</li>
-                <li>Worked with Pandas, NumPy, and Scikit-learn.</li>
-              </ul>
+            <div className="experience-card">
+              <div className="timeline-dot"></div>
+              <h3 className="company">Edunet Foundation</h3>
+              <div className="role-content">
+                <h4>AI & ML Intern</h4>
+                <p className="duration">Jan 2026 – Feb 2026</p>
+                <ul className="exp-list">
+                  <li>
+                    Built, optimized, and deployed predictive machine learning
+                    pipelines using Python, Pandas, NumPy, and Scikit-learn,
+                    achieving high precision in data preprocessing, feature
+                    engineering, and model evaluation.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

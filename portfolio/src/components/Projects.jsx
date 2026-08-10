@@ -15,25 +15,27 @@ const Projects = () => {
         <div className="projects-grid" ref={projectsGridRef}>
           <div className="project-card">
             <img
-              src="/assets/projects/myra.png"
-              alt="Myra AI Voice Assistant"
+              src="/assets/projects/agriai.png"
+              alt="AgriAI"
             />
             <div className="project-content">
-              <h3>Myra — AI Voice Assistant</h3>
+              <h3>AgriAI</h3>
               <p>
-                A voice-activated AI assistant that connects the Web Speech API
-                with Gemini AI to process spoken commands and automate browser
-                tasks — delivering real-time, hands-free web interactions.
+                An end-to-end smart farming web application empowering farmers with computer vision disease detection, 
+                machine learning harvest yield prediction, 
+                live market prices, and multilingual AI advisories.
               </p>
               <div className="tech-stack">
-                <span>React 19</span>
-                <span>Vite 8</span>
-                <span>Google Gemini AI</span>
-                <span>Web Speech API</span>
+                <span>React 18</span>
+                <span>Flask</span>
+                <span>PyTorch</span>
+                <span>Scikit-Learn</span>
+                <span>PostgreSQL</span>
+                <span>i18next</span>
               </div>
               <div className="project-links">
                 <a
-                  href="https://github.com/Aniruddhasain7/Myra-Voice-Assistant"
+                  href="https://github.com/Aniruddhasain7/Agri-ai"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -41,7 +43,7 @@ const Projects = () => {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://myra-ai-va.vercel.app/"
+                  href="https://agri-ai-5.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -89,93 +91,14 @@ const Projects = () => {
             </div>
           </div>
           <div className="project-card">
-            <img src="/assets/projects/exp.png" alt="Expense Tracker" />
-            <div className="project-content">
-              <h3>Expense Tracker</h3>
-              <p>
-                A full-stack MERN app to track income, categorize expenses,
-                and visualize financial habits with interactive charts. Supports
-                monthly budgets, transaction filters, and spending insights to
-                help users manage finances with clarity.
-              </p>
-              <div className="tech-stack">
-                <span>MongoDB</span>
-                <span>Express</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Tailwind CSS</span>
-              </div>
-              <div className="project-links">
-                <a
-                  href="https://github.com/Aniruddhasain7/Expense-Tracker"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://expense-tracker-skxx.onrender.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  <FaExternalLinkAlt />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="project-card">
-            <img
-              src="/assets/projects/crop.png"
-              alt="AI Crop Recommendation System"
-            />
-            <div className="project-content">
-              <h3>Crop Recommendation System</h3>
-              <p>
-                An ML-based system that recommends the most suitable crop based
-                on soil nutrients and environmental conditions. Analyzes N, P, K,
-                temperature, and humidity to empower farmers with data-driven
-                decisions for maximizing yield.
-              </p>
-              <div className="tech-stack">
-                <span>Python</span>
-                <span>Streamlit</span>
-                <span>Pandas</span>
-                <span>Numpy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-              </div>
-              <div className="project-links">
-                <a
-                  href="https://github.com/Aniruddhasain7/Crop-Recommendation-System"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://crop-recommendation-sy.streamlit.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn"
-                >
-                  <FaExternalLinkAlt />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
             <img src="/assets/projects/docuask.png" alt="DocuAsk" />
             <div className="project-content">
               <h3>DocuAsk</h3>
               <p>
-                An AI-powered platform where users can upload PDFs and chat
-                with their documents in natural language. Powered by LangChain
-                and Groq AI with RAG for fast, context-aware answers and
-                effortless document summarization.
+                An AI-powered platform where users can upload PDFs and chat with
+                their documents in natural language. Powered by LangChain and
+                Groq AI with RAG for fast, context-aware answers and effortless
+                document summarization.
               </p>
               <div className="tech-stack">
                 <span>Python</span>
@@ -196,6 +119,42 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://docuask.streamlit.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src="/assets/projects/fitbuddy.png" alt="FitBuddy" />
+            <div className="project-content">
+              <h3>FitBuddy</h3>
+              <p>
+                An AI-powered fitness tracking platform leveraging Google Gemini
+                AI for personalized health insights, workout logging, daily
+                macro tracking, and voice-assisted coaching.
+              </p>
+              <div className="tech-stack">
+                <span>React 19</span>
+                <span>Vite</span>
+                <span>Google Gemini AI</span>
+                <span>Vanilla CSS</span>
+                <span>Axios</span>
+              </div>
+              <div className="project-links">
+                <a
+                  href="https://github.com/Aniruddhasain7/FitBuddy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://fitbuddy-ac.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
