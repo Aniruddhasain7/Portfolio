@@ -14,7 +14,7 @@ const Hero = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [typingSpeed, setTypingSpeed] = useState(100);
+  const typingSpeed = 100;
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];

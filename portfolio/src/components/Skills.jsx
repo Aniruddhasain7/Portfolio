@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLaptopCode, FaCode, FaServer, FaMicrochip } from "react-icons/fa6";
+import { FaCode, FaServer, FaMicrochip } from "react-icons/fa6";
 
 const Skills = () => {
   const skillCategories = [
@@ -33,7 +33,7 @@ const Skills = () => {
     },
     {
       category: "aiml",
-      title: "AI & ML ",
+      title: "AI & ML",
       icon: <FaMicrochip />,
       description:
         "Designing predictive machine learning pipelines, LLM agents, and cognitive systems.",

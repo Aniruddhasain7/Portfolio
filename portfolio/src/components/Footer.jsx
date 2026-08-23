@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHeart, FaCode } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -36,7 +35,6 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>© {currentYear} Aniruddha Sain. All rights reserved.</p>
-          <p style={{ display: "flex", alignItems: "center", gap: "6px" }}></p>
         </div>
       </div>
     </footer>
