@@ -1,24 +1,43 @@
-# 🚀 Aniruddha Sain - Portfolio
+# 🌐 Aniruddha Sain — Personal Portfolio
 
-A modern, responsive portfolio website built with **React** and **Vite** to showcase professional work, technical skills, and creative projects.
+A sleek, responsive, and modern developer portfolio built with **React 19** and **Vite** showcasing projects, skills, and experience across AI/ML and Full-Stack Web Development.
+
+---
 
 ## ✨ Features
 
-- **📱 Responsive Design**: Optimized for all devices (Mobile, Tablet, Desktop).
-- **🎨 Modern UI**: Dark-themed aesthetic with premium red accents and smooth transitions.
-- **📧 Contact Form**: Fully integrated with **EmailJS** for direct messaging.
-- **⚡ Performance**: Built with **Vite** for lightning-fast load times.
+- **📱 Fully Responsive**: Optimized for seamless viewing across mobile, tablet, and desktop screens.
+- **🎨 Modern Dark UI**: Sleek dark aesthetic with ambient glow effects and smooth transitions.
+- **💼 Projects Showcase**: Interactive project cards featuring live demos and GitHub repository links.
+- **📬 Working Contact Form**: Integrated with **EmailJS** for direct messaging.
+- **⚡ Fast Performance**: Powered by **Vite** for instantaneous loading and fast builds.
+
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-
-- **Framework**: React 19 (Hooks, Context API)
-- **Styling**: CSS3 (Custom Design System)
-- **Icons**: React Icons (Font Awesome, Material Design)
-
-### Tools & Services
-
+- **Frontend**: React 19, Vanilla CSS3 (Custom Design System)
+- **Icons**: React Icons (Font Awesome, Material Design, Lucide)
+- **Email Service**: EmailJS
 - **Build Tool**: Vite
-- **Communication**: EmailJS
 - **Version Control**: Git & GitHub
+
+---
+
+## 🤝 Connect With Me
+
+<div align="left">
+  <a href="https://www.linkedin.com/in/aniruddha-sain-706220280" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/Aniruddhasain7" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:aniruddhasain315@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://x.com/SainAniruddha" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" />
+  </a>
+</div>
+
