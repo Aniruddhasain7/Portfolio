@@ -22,10 +22,10 @@ const EducationExperience = () => {
       type: "Internship",
       points: [
         "Engineered AI-driven cloud native applications deployed on IBM Cloud infrastructure with serverless microservices.",
-        "Integrated cognitive AI APIs for real-time natural language and computer vision processing tasks.",
+        "Integrated pre-trained AI/ML models into serverless cloud microservices for real-time inference and processing.",
         "Implemented secure API endpoints and optimized latency for low-overhead client communication.",
       ],
-      tags: ["IBM Cloud", "Cognitive APIs", "Serverless", "Cloud Architecture", "REST APIs"],
+      tags: ["IBM Cloud", "Model Inference", "Cloud Services", "Cloud Architecture"],
     },
   ];
 
@@ -39,88 +39,125 @@ const EducationExperience = () => {
         "Rigorous academic curriculum with deep emphasis on Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), and Database Management Systems (DBMS).",
         "Engaged in hands-on practical labs and project building involving Computer Networks, Operating Systems, and Applied AI.",
       ],
-      tags: ["DSA", "DBMS", "Computer Networks", "OOP", "Operating Systems", "Artificial Intelligence"],
+      tags: [
+        "DSA",
+        "DBMS",
+        "Computer Networks",
+        "OOP",
+        "Operating Systems",
+        "Artificial Intelligence",
+      ],
     },
   ];
 
   return (
-    <section id="experience" className="edu-exp">
-      <div className="section-header">
-        <div className="section-tag">
-          <span className="section-tag-dot"></span>
+    <section
+      id="experience"
+      className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 w-full max-w-[1280px] mx-auto scroll-mt-[90px]"
+    >
+      <div className="text-center mb-12 flex flex-col items-center w-full">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 border border-primary-red/35 text-primary-red font-mono text-xs font-bold uppercase tracking-wider mb-4 shadow-[0_0_15px_rgba(229,9,20,0.18)]">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary-red shadow-[0_0_10px_#e50914] animate-pulse-dot"></span>
           <span>Journey & Milestones</span>
         </div>
-        <h2 className="section-title">
-          Experience & <span>Education</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3 text-center">
+          Experience & <span className="gradient-red-text drop-shadow-[0_0_20px_rgba(229,9,20,0.35)]">Education</span>
         </h2>
-        <p className="section-subtitle">
-          My academic foundation and professional <span>internship milestones</span> in Artificial Intelligence & Cloud computing.
+        <p className="text-sm sm:text-base text-zinc-400 max-w-[650px] mx-auto text-center leading-relaxed">
+          My academic foundation and professional{" "}
+          <span className="text-primary-red font-semibold">internship milestones</span> in Artificial Intelligence & Cloud
+          computing.
         </p>
       </div>
 
-      <div className="edu-exp-grid">
-        <div className="timeline-column">
-          <div className="timeline-column-header">
-            <div className="timeline-column-icon">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-[1200px] mx-auto">
+        <div className="flex flex-col">
+          <div className="flex items-center gap-3.5 mb-7">
+            <div className="text-primary-red text-2xl">
               <FaBriefcase />
             </div>
-            <h3 className="timeline-column-title">Work Experience</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white">Work Experience</h3>
           </div>
 
-          <div className="timeline-list">
-            {experiences.map((exp, index) => (
-              <div key={index} className="timeline-node">
-                <div className="timeline-marker"></div>
-                <div className="timeline-card">
-                  <div className="timeline-meta">
-                    <h4 className="timeline-institution">{exp.company}</h4>
-                    <span className="timeline-badge">{exp.period}</span>
+          <div className="flex flex-col gap-7">
+            {experiences.map((exp, index) => {
+              const isLast = index === experiences.length - 1;
+              return (
+                <div key={index} className="relative pl-8 sm:pl-9">
+                  {!isLast && (
+                    <div className="absolute left-[11px] top-7 -bottom-14 w-[2px] bg-gradient-to-b from-[#e50914] via-[#ff2a2a] to-[#e50914]/40 shadow-[0_0_8px_rgba(229,9,20,0.6)] pointer-events-none" />
+                  )}
+                  <div className="absolute left-3 -translate-x-1/2 top-7 -translate-y-1/2 w-4 h-4 flex items-center justify-center z-10 pointer-events-none">
+                    <span className="absolute w-5 h-5 rounded-full bg-primary-red/35 animate-ping opacity-60" />
+                    <span className="relative w-3.5 h-3.5 rounded-full bg-[#ff1e27] border-2 border-black timeline-dot-glow" />
                   </div>
-                  <div className="timeline-role">{exp.role}</div>
-                  <ul className="timeline-desc-list">
-                    {exp.points.map((pt, i) => (
-                      <li key={i}>{pt}</li>
-                    ))}
-                  </ul>
-                  <div className="timeline-tags">
-                    {exp.tags.map((tag) => (
-                      <span key={tag} className="timeline-tag">
-                        {tag}
+                  <div className="glass-card p-5 sm:p-7 hover:translate-x-1.5 transition-all duration-300">
+                    <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                      <h4 className="text-base sm:text-lg font-bold text-white">{exp.company}</h4>
+                      <span className="inline-flex px-3 py-1 rounded-full bg-black/40 border border-primary-red/35 font-mono text-xs text-primary-red font-bold">
+                        {exp.period}
                       </span>
-                    ))}
+                    </div>
+                    <div className="text-sm sm:text-base font-semibold text-primary-red mb-3.5">
+                      {exp.role}
+                    </div>
+                    <ul className="flex flex-col gap-2.5 list-none">
+                      {exp.points.map((pt, i) => (
+                        <li key={i} className="relative pl-4 text-xs sm:text-sm text-zinc-400 leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-primary-red before:font-bold">
+                          {pt}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex flex-wrap gap-2 mt-4 pt-3.5 border-t border-primary-red/15">
+                      {exp.tags.map((tag) => (
+                        <span key={tag} className="text-xs px-2.5 py-1 rounded-md bg-black/40 border border-primary-red/20 text-zinc-300 font-mono font-medium">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
-        <div className="timeline-column" id="education">
-          <div className="timeline-column-header">
-            <div className="timeline-column-icon">
+        <div className="flex flex-col" id="education">
+          <div className="flex items-center gap-3.5 mb-7">
+            <div className="text-primary-red text-2xl">
               <FaGraduationCap />
             </div>
-            <h3 className="timeline-column-title">Academic Background</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white">Academic Background</h3>
           </div>
 
-          <div className="timeline-list">
+          <div className="flex flex-col gap-7">
             {education.map((edu, index) => (
-              <div key={index} className="timeline-node">
-                <div className="timeline-marker"></div>
-                <div className="timeline-card">
-                  <div className="timeline-meta">
-                    <h4 className="timeline-institution">{edu.institution}</h4>
-                    <span className="timeline-badge">{edu.period}</span>
+              <div key={index} className="relative pl-8 sm:pl-9">
+                <div className="absolute left-[11px] top-7 h-44 w-[2px] bg-gradient-to-b from-[#e50914] via-[#e50914]/40 to-transparent shadow-[0_0_8px_rgba(229,9,20,0.5)] pointer-events-none" />
+                <div className="absolute left-3 -translate-x-1/2 top-7 -translate-y-1/2 w-4 h-4 flex items-center justify-center z-10 pointer-events-none">
+                  <span className="absolute w-5 h-5 rounded-full bg-primary-red/35 animate-ping opacity-60" />
+                  <span className="relative w-3.5 h-3.5 rounded-full bg-[#ff1e27] border-2 border-black timeline-dot-glow" />
+                </div>
+                <div className="glass-card p-5 sm:p-7 hover:translate-x-1.5 transition-all duration-300">
+                  <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                    <h4 className="text-base sm:text-lg font-bold text-white">{edu.institution}</h4>
+                    <span className="inline-flex px-3 py-1 rounded-full bg-black/40 border border-primary-red/35 font-mono text-xs text-primary-red font-bold">
+                      {edu.period}
+                    </span>
                   </div>
-                  <div className="timeline-role">{edu.degree}</div>
-                  <ul className="timeline-desc-list">
+                  <div className="text-sm sm:text-base font-semibold text-primary-red mb-3.5">
+                    {edu.degree}
+                  </div>
+                  <ul className="flex flex-col gap-2.5 list-none">
                     {edu.points.map((pt, i) => (
-                      <li key={i}>{pt}</li>
+                      <li key={i} className="relative pl-4 text-xs sm:text-sm text-zinc-400 leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-primary-red before:font-bold">
+                        {pt}
+                      </li>
                     ))}
                   </ul>
-                  <div className="timeline-tags">
+                  <div className="flex flex-wrap gap-2 mt-4 pt-3.5 border-t border-primary-red/15">
                     {edu.tags.map((tag) => (
-                      <span key={tag} className="timeline-tag">
+                      <span key={tag} className="text-xs px-2.5 py-1 rounded-md bg-black/40 border border-primary-red/20 text-zinc-300 font-mono font-medium">
                         {tag}
                       </span>
                     ))}
