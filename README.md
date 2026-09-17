@@ -4,6 +4,12 @@ A sleek, responsive developer portfolio built with **React 19**, **Tailwind CSS 
 
 ---
 
+<a href="https://aniruddha-sain.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/LIVE_DEMO-VIEW_PORTFOLIO-EF4444?style=for-the-badge&logo=rocket&logoColor=white&labelColor=0a0a0a" alt="Live Demo" height="38" />
+</a>
+
+---
+
 ## ✨ Features
 
 - **📱 Fully Responsive**: Optimized for mobile, tablet, and desktop screens.
