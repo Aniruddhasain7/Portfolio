@@ -48,20 +48,21 @@ const Projects = () => {
       liveUrl: "https://docuask.streamlit.app/",
     },
     {
-      id: "fitbuddy",
-      title: "FitBuddy – AI Health & Fitness Hub",
-      image: "/assets/projects/fitbuddy.png",
+      id: "expensemate",
+      title: "ExpenseMate – AI Finance & Expense Tracker",
+      image: "/assets/projects/expensemate.png",
       description:
-        "Personalized fitness companion utilizing Google Gemini AI to analyze diet metrics, generate adaptive workout schedules, track macro nutrients, and deliver customized wellness recommendations.",
+        "A full-stack MERN financial management platform to track income and expenses, establish category budgets, achieve savings goals, consult an intelligent AI Copilot, and scan receipts via OCR.",
       techStack: [
         "React 19",
-        "Vite",
-        "Google Gemini AI",
-        "Vanilla CSS",
-        "Axios",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS",
+        "Recharts",
       ],
-      githubUrl: "https://github.com/Aniruddhasain7/FitBuddy",
-      liveUrl: "https://fitbuddy-ac.vercel.app/",
+      githubUrl: "https://github.com/Aniruddhasain7/ExpenseMate",
+      liveUrl: "https://expense-tracker-27.vercel.app/",
     },
   ];
 
